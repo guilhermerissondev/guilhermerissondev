@@ -19,9 +19,18 @@
 
 ### Sobre
 
-Estudante de Engenharia de Software (Uninter) e analista de dados na Vitru Educação.
+Hello, I'm Guilherme. Software Engineer Student based in Maringá, Brazil. Software Engineering student (Uninter) with a postgraduate degree in Data Science, building Python backends with FastAPI, data pipelines and LLMs. Currently working as a data analyst at Vitru Educação on UniCesumar academic planning systems.
 
-Construo backend em Python — FastAPI, PostgreSQL, dados e LLM — com sistemas que medem qualidade e entregam evidência.
+**Work experience with Python / backend projects**
+
+- Teacher allocation optimizer (OR-Tools CP-SAT, FastAPI, React): ~200 faculty across 350+ classes per module in minutes
+- Student-base forecasting model with under 2% error vs. realized
+- Job Hunters: FastAPI/Next.js/PostgreSQL/LLM SaaS — ~98k jobs / 649 sources
+- Regulatory RAG eval over BACEN rules: MRR 0.361 → 0.644
+
+**Core skills:** Python · FastAPI · Next.js · React · TypeScript · PostgreSQL · pgvector · DuckDB · Docker · OR-Tools · RAG · Gemini · pytest · GitHub Actions · Power BI
+
+**Foundations:** Software engineering fundamentals, data systems, backend APIs, LLM evaluation and production data pipelines.
 
 ### Projetos em destaque
 
@@ -36,4 +45,4 @@ Python &middot; FastAPI &middot; Next.js &middot; React &middot; TypeScript &mid
 
 ---
 
-<sub>Aberto a oportunidades em software engineering / backend — remoto ou Maringá/PR.</sub>
+<sub>Open to software engineering / backend opportunities — remote or Maringá/PR.</sub>
