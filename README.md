@@ -1,7 +1,7 @@
 <h1 align="center">Guilherme Risson</h1>
 
 <p align="center">
-  AI Software Engineer &middot; Python, FastAPI, RAG, LLM &middot; Maringá, PR
+  Software Engineer Student &middot; Python, FastAPI, React, RAG, LLM &middot; Maringá, PR
 </p>
 
 <p align="center">
@@ -17,6 +17,10 @@
   </picture>
 </p>
 
+### Sobre
+
+Estudante de Engenharia de Software (Uninter), com experiência prática em dados, backend e LLMs. Atua como analista de dados na Vitru Educação e publica projetos abertos com foco em recuperação confiável, avaliação medida e custo sob controle.
+
 ### Projetos
 
 - [**Regulatory RAG Eval**](https://github.com/guilhermerissondev/regulatory-rag-eval): avaliação de RAG sobre normativos do BACEN, com busca híbrida (BM25 + embeddings) e auditoria de vigência das citações.
@@ -26,8 +30,8 @@
 
 ### Stack
 
-Python &middot; FastAPI &middot; SQL &middot; DuckDB &middot; Docker &middot; Gemini &middot; RAG &middot; LightGBM
+Python &middot; FastAPI &middot; SQL &middot; DuckDB &middot; Docker &middot; React &middot; TypeScript &middot; Gemini &middot; RAG &middot; LightGBM
 
 ---
 
-<sub>Disponível para vagas de AI Software Engineer, remoto ou Maringá/PR.</sub>
+<sub>Aberto a conversas sobre projetos, colaborações e oportunidades em desenvolvimento de software — remoto ou Maringá/PR.</sub>
