@@ -1,7 +1,7 @@
 <h1 align="center">Guilherme Risson</h1>
 
 <p align="center">
-  Software Engineer Student &middot; Python, FastAPI, React, PostgreSQL, LLM &middot; Maringá, PR
+  Software Engineer Student &middot; Backend &middot; Python, FastAPI, PostgreSQL, LLM &middot; Maringá, PR
 </p>
 
 <p align="center">
@@ -19,14 +19,16 @@
 
 ### Sobre
 
-Estudante de Engenharia de Software (Uninter), com experiência prática em backend, dados e LLMs. Atua como analista de dados na Vitru Educação e publica projetos abertos que contam a mesma história da headline: Python, FastAPI, PostgreSQL, React e LLM.
+Estudante de Engenharia de Software (Uninter) e analista de dados na Vitru Educação.
+
+Construo backend em Python — FastAPI, PostgreSQL, dados e LLM — com sistemas que medem qualidade e entregam evidência.
 
 ### Projetos em destaque
 
-- [**Job Hunters**](https://github.com/guilhermerissondev/job-hunters): SaaS de caça a vagas — FastAPI, Next.js, PostgreSQL/pgvector e LLM com citação verificada (~98 mil vagas / 649 fontes).
-- [**Teacher Allocation Optimizer**](https://github.com/guilhermerissondev/teacher-allocation-optimizer): alocação docente com CP-SAT, FastAPI e React — sistema em operação na Vitru, em código aberto.
-- [**TikTok Viral Generator**](https://github.com/guilhermerissondev/tiktok-viral-generator): pipeline de agentes que gera vídeos curtos a partir de fontes verificáveis.
-- [**Regulatory RAG Eval**](https://github.com/guilhermerissondev/regulatory-rag-eval): avaliação de RAG sobre normativos do BACEN, com busca híbrida e auditoria de vigência das citações.
+- [**Job Hunters**](https://github.com/guilhermerissondev/job-hunters): SaaS de vagas com FastAPI, Next.js, PostgreSQL e LLM. ~98 mil vagas · 649 fontes.
+- [**Teacher Allocation Optimizer**](https://github.com/guilhermerissondev/teacher-allocation-optimizer): Em produção na Vitru. CP-SAT + FastAPI + React — agora open source.
+- [**TikTok Viral Generator**](https://github.com/guilhermerissondev/tiktok-viral-generator): Agentes que geram vídeo curto pt-BR com fonte em cada fato.
+- [**Regulatory RAG Eval**](https://github.com/guilhermerissondev/regulatory-rag-eval): RAG sobre normativos do BACEN. MRR 0,361 → 0,644.
 
 ### Stack
 
@@ -34,4 +36,4 @@ Python &middot; FastAPI &middot; Next.js &middot; React &middot; TypeScript &mid
 
 ---
 
-<sub>Aberto a conversas sobre projetos, colaborações e oportunidades em desenvolvimento de software — remoto ou Maringá/PR.</sub>
+<sub>Aberto a oportunidades em software engineering / backend — remoto ou Maringá/PR.</sub>
