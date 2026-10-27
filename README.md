@@ -19,18 +19,18 @@
 
 ### Sobre
 
-Hello, I'm Guilherme. Software Engineer Student based in Maringá, Brazil. Software Engineering student (Uninter) with a postgraduate degree in Data Science, building Python backends with FastAPI, data pipelines and LLMs. Currently working as a data analyst at Vitru Educação on UniCesumar academic planning systems.
+Olá, eu sou o Guilherme. Software Engineer Student em Maringá, Brasil. Estudante de Engenharia de Software (Uninter), com pós-graduação em Ciência de Dados, construindo backends em Python com FastAPI, pipelines de dados e LLMs. Hoje atuo como analista de dados na Vitru Educação, no planejamento acadêmico da UniCesumar.
 
-**Work experience with Python / backend projects**
+**Experiência com projetos em Python / backend**
 
-- Teacher allocation optimizer (OR-Tools CP-SAT, FastAPI, React): ~200 faculty across 350+ classes per module in minutes
-- Student-base forecasting model with under 2% error vs. realized
-- Job Hunters: FastAPI/Next.js/PostgreSQL/LLM SaaS — ~98k jobs / 649 sources
-- Regulatory RAG eval over BACEN rules: MRR 0.361 → 0.644
+- Otimizador de alocação docente (OR-Tools CP-SAT, FastAPI, React): ~200 docentes em 350+ turmas por módulo em minutos
+- Modelo preditivo da base de alunos com erro abaixo de 2%
+- Job Hunters: SaaS FastAPI/Next.js/PostgreSQL/LLM — ~98 mil vagas / 649 fontes
+- RAG regulatório BACEN: MRR 0,361 → 0,644
 
-**Core skills:** Python · FastAPI · Next.js · React · TypeScript · PostgreSQL · pgvector · DuckDB · Docker · OR-Tools · RAG · Gemini · pytest · GitHub Actions · Power BI
+**Competências principais:** Python · FastAPI · Next.js · React · TypeScript · PostgreSQL · pgvector · DuckDB · Docker · OR-Tools · RAG · Gemini · pytest · GitHub Actions · Power BI
 
-**Foundations:** Software engineering fundamentals, data systems, backend APIs, LLM evaluation and production data pipelines.
+**Fundamentos:** Engenharia de software, sistemas de dados, APIs backend, avaliação de LLM e pipelines de dados em produção.
 
 ### Projetos em destaque
 
@@ -45,4 +45,4 @@ Python &middot; FastAPI &middot; Next.js &middot; React &middot; TypeScript &mid
 
 ---
 
-<sub>Open to software engineering / backend opportunities — remote or Maringá/PR.</sub>
+<sub>Aberto a oportunidades em software engineering / backend — remoto ou Maringá/PR.</sub>
