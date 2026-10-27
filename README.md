@@ -1,7 +1,7 @@
 <h1 align="center">Guilherme Risson</h1>
 
 <p align="center">
-  Software Engineer Student &middot; Python, FastAPI, React, RAG, LLM &middot; Maringá, PR
+  Software Engineer Student &middot; Python, FastAPI, React, PostgreSQL, LLM &middot; Maringá, PR
 </p>
 
 <p align="center">
@@ -19,18 +19,18 @@
 
 ### Sobre
 
-Estudante de Engenharia de Software (Uninter), com experiência prática em dados, backend e LLMs. Atua como analista de dados na Vitru Educação e publica projetos abertos com foco em recuperação confiável, avaliação medida e custo sob controle.
+Estudante de Engenharia de Software (Uninter), com experiência prática em backend, dados e LLMs. Atua como analista de dados na Vitru Educação e publica projetos abertos que contam a mesma história da headline: Python, FastAPI, PostgreSQL, React e LLM.
 
-### Projetos
+### Projetos em destaque
 
-- [**Regulatory RAG Eval**](https://github.com/guilhermerissondev/regulatory-rag-eval): avaliação de RAG sobre normativos do BACEN, com busca híbrida (BM25 + embeddings) e auditoria de vigência das citações.
-- [**Procurement Triage Service**](https://github.com/guilhermerissondev/procurement-triage-service): extração de editais do PNCP com LLM, validação por citação literal no PDF e API FastAPI.
+- [**Job Hunters**](https://github.com/guilhermerissondev/job-hunters): SaaS de caça a vagas — FastAPI, Next.js, PostgreSQL/pgvector e LLM com citação verificada (~98 mil vagas / 649 fontes).
+- [**Teacher Allocation Optimizer**](https://github.com/guilhermerissondev/teacher-allocation-optimizer): alocação docente com CP-SAT, FastAPI e React — sistema em operação na Vitru, em código aberto.
 - [**TikTok Viral Generator**](https://github.com/guilhermerissondev/tiktok-viral-generator): pipeline de agentes que gera vídeos curtos a partir de fontes verificáveis.
-- [**Credit Risk Decision Engine**](https://github.com/guilhermerissondev/credit-risk-decision-engine): modelo de PD com LightGBM e ponto de corte definido por lucro esperado.
+- [**Regulatory RAG Eval**](https://github.com/guilhermerissondev/regulatory-rag-eval): avaliação de RAG sobre normativos do BACEN, com busca híbrida e auditoria de vigência das citações.
 
 ### Stack
 
-Python &middot; FastAPI &middot; SQL &middot; DuckDB &middot; Docker &middot; React &middot; TypeScript &middot; Gemini &middot; RAG &middot; LightGBM
+Python &middot; FastAPI &middot; Next.js &middot; React &middot; TypeScript &middot; PostgreSQL &middot; pgvector &middot; DuckDB &middot; Docker &middot; OR-Tools &middot; Gemini &middot; RAG
 
 ---
 
