@@ -42,9 +42,9 @@ Software Engineer em início de carreira, em Maringá (PR). Estudante de Engenha
 
 ### Stack
 
-**Backend:** Python &middot; FastAPI &middot; Pydantic &middot; SQLAlchemy &middot; Alembic &middot; pytest &middot; Docker &middot; GitHub Actions
-**Frontend:** TypeScript &middot; React &middot; Next.js &middot; Tailwind CSS
-**Dados:** PostgreSQL &middot; pgvector &middot; SQL Server &middot; SQLite &middot; DuckDB
+**Backend:** Python &middot; FastAPI &middot; Pydantic &middot; SQLAlchemy &middot; Alembic &middot; pytest &middot; Docker &middot; GitHub Actions<br>
+**Frontend:** TypeScript &middot; React &middot; Next.js &middot; Tailwind CSS<br>
+**Dados:** PostgreSQL &middot; pgvector &middot; SQL Server &middot; SQLite &middot; DuckDB<br>
 **IA:** LLM &middot; RAG &middot; Gemini API &middot; OR-Tools
 
 ---
