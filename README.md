@@ -1,7 +1,7 @@
 <h1 align="center">Guilherme Risson</h1>
 
 <p align="center">
- Software Engineer Student &middot; Backend &middot; Python, FastAPI, PostgreSQL, LLM &middot; Maringá, PR
+ Software Engineer &middot; Backend &amp; Data &middot; Python, FastAPI, PostgreSQL
 </p>
 
 <p align="center">
@@ -19,25 +19,24 @@
 
 ### Sobre
 
-Olá, eu sou o Guilherme. Software Engineer Student em Maringá, Brasil. Estudante de Engenharia de Software (Uninter), com pós-graduação em Ciência de Dados, construindo backends em Python com FastAPI, pipelines de dados e LLMs. Hoje atuo como analista de dados na Vitru Educação, no planejamento acadêmico da UniCesumar.
+Estudante de Engenharia de Software na Uninter e Analista de Dados Pleno na Vitru Educação. Desenvolvo sistemas backend e pipelines de dados em Python para o planejamento acadêmico da UniCesumar.
 
-**Experiência com projetos em Python / backend**
+**Principais resultados**
 
-- Otimizador de alocação docente (OR-Tools CP-SAT, FastAPI, React): ~200 docentes em 350+ turmas por módulo em minutos
-- Modelo preditivo da base de alunos com erro abaixo de 2%
-- Job Hunters: SaaS FastAPI/Next.js/PostgreSQL/LLM: ~98 mil vagas / 649 fontes
-- RAG regulatório BACEN: MRR 0,361 → 0,644
+- Otimizador com OR-Tools, FastAPI e React: cerca de 200 docentes em mais de 350 turmas por módulo em minutos
+- Modelo de projeção da base de alunos com erro inferior a 2%
+- Auditorias em Python sobre bases com mais de 40 milhões de linhas
+- Job Hunters: cerca de 98 mil vagas de 649 fontes, com correspondência baseada em evidências do currículo
+- RAG sobre 294 normativos do BACEN: MRR de 0,361 para 0,644
 
-**Competências principais:** Python · FastAPI · Next.js · React · TypeScript · PostgreSQL · pgvector · DuckDB · Docker · OR-Tools · RAG · Gemini · pytest · GitHub Actions · Power BI
-
-**Fundamentos:** Engenharia de software, sistemas de dados, APIs backend, avaliação de LLM e pipelines de dados em produção.
+**Stack principal:** Python · FastAPI · PostgreSQL · Next.js · React · TypeScript · Docker · DuckDB · pgvector · OR-Tools · RAG · pytest · GitHub Actions
 
 ### Projetos em destaque
 
 - [**Job Hunters**](https://github.com/guilhermerissondev/job-hunters): SaaS de vagas com FastAPI, Next.js, PostgreSQL e LLM. ~98 mil vagas · 649 fontes.
-- [**Teacher Allocation Optimizer**](https://github.com/guilhermerissondev/teacher-allocation-optimizer): Em produção na Vitru. CP-SAT + FastAPI + React, agora open source.
-- [**TikTok Viral Generator**](https://github.com/guilhermerissondev/tiktok-viral-generator): Agentes que geram vídeo curto pt-BR com fonte em cada fato.
-- [**Regulatory RAG Eval**](https://github.com/guilhermerissondev/regulatory-rag-eval): RAG sobre normativos do BACEN. MRR 0,361 → 0,644.
+- [**Teacher Allocation Optimizer**](https://github.com/guilhermerissondev/teacher-allocation-optimizer): Sistema em produção na Vitru, com CP-SAT, FastAPI e React. Código aberto.
+- [**TikTok Viral Generator**](https://github.com/guilhermerissondev/tiktok-viral-generator): Pipeline de agentes que produz vídeos curtos em pt-BR com fonte verificável em cada fato.
+- [**Regulatory RAG Eval**](https://github.com/guilhermerissondev/regulatory-rag-eval): Avaliação de RAG sobre 294 normativos do BACEN. MRR de 0,361 para 0,644.
 
 ### Stack
 
@@ -45,4 +44,4 @@ Python &middot; FastAPI &middot; Next.js &middot; React &middot; TypeScript &mid
 
 ---
 
-<sub>Aberto a oportunidades em software engineering / backend: remoto ou Maringá/PR.</sub>
+<sub>Disponível para oportunidades em engenharia de software e backend, em trabalho remoto ou em Maringá/PR.</sub>
