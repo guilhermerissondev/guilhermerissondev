@@ -34,7 +34,7 @@ Estudo Engenharia de Software na Uninter e moro em Maringá (PR). Trabalho como 
 
 | Projeto | O que é | Stack |
 |---|---|---|
-| [Job Hunters](https://github.com/guilhermerissondev/job-hunters) · [demo](https://job-hunters-ebon.vercel.app) | SaaS de vagas em que cada indicação vem com a experiência do currículo que a justifica. ~98 mil vagas, 649 fontes, 380 testes, 21 ADRs | FastAPI, PostgreSQL/pgvector, Next.js, LLM |
+| [Job Hunters](https://job-hunters-ebon.vercel.app) | SaaS de vagas em que cada indicação vem com a experiência do currículo que a justifica. ~98 mil vagas, 649 fontes, 380 testes, 21 ADRs | FastAPI, PostgreSQL/pgvector, Next.js, LLM |
 | [Teacher Allocation Optimizer](https://github.com/guilhermerissondev/teacher-allocation-optimizer) | Sistema em produção na Vitru, com código aberto | FastAPI, React, TypeScript, CP-SAT |
 | [TikTok Viral Generator](https://github.com/guilhermerissondev/tiktok-viral-generator) | Agentes que produzem vídeos curtos em pt-BR com fonte para cada fato. 691 testes | Python, Pydantic, SQLite, ffmpeg |
 | [Regulatory RAG Eval](https://github.com/guilhermerissondev/regulatory-rag-eval) | Avaliação de RAG sobre 294 normativos do BACEN. MRR de 0,361 para 0,644 | BM25, embeddings, RRF |
