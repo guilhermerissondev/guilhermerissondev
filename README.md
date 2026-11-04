@@ -1,7 +1,7 @@
 <h1 align="center">Guilherme Risson</h1>
 
 <p align="center">
- Software Engineering Student &middot; Backend &middot; Python, FastAPI, PostgreSQL
+ Desenvolvedor Backend &middot; Python &middot; FastAPI &middot; PostgreSQL
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 
 ### Sobre
 
-Estudo Engenharia de Software na Uninter e moro em Maringá (PR). Trabalho como Analista de Dados Pleno na Vitru Educação, onde desenvolvo em Python os sistemas do planejamento acadêmico da UniCesumar. Nos projetos pessoais, construo APIs com FastAPI e PostgreSQL.
+Desenvolvedor backend em Python. Sou Analista de Dados Pleno na Vitru Educação, onde desenvolvi e mantenho em produção o sistema que distribui cerca de 200 docentes em mais de 350 turmas por módulo, com FastAPI, React e OR-Tools. Estudo Engenharia de Software na Uninter e busco vaga júnior de desenvolvedor backend, remota ou em Maringá (PR).
 
 ### Projetos end-to-end
 
