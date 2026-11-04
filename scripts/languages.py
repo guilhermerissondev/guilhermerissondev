@@ -85,7 +85,7 @@ def svg(items, theme):
     span = width - 2 * pad
     colors = [OTHER_COLOR if name == "Outras" else PALETTE[i % len(PALETTE)] for i, (name, _) in enumerate(items)]
     rows = (len(items) + 1) // 2
-    height = 150 + rows * 46
+    height = 136 + rows * 46
     mono = "ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace"
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" '
@@ -99,14 +99,13 @@ def svg(items, theme):
         "</style>",
         f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="10" fill="{theme["bg"]}" stroke="{theme["rule"]}"/>',
         '<g font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif">',
-        f'<text x="{pad}" y="38" font-family="{mono}" font-size="11" letter-spacing="1.4" fill="{colors[0]}">LINGUAGENS</text>',
-        f'<text x="{pad}" y="64" font-size="20" font-weight="600" fill="{theme["ink"]}">O que mais escrevo ultimamente</text>',
-        f'<text x="{width - pad}" y="38" font-family="{mono}" font-size="11" text-anchor="end" fill="{theme["muted"]}">'
+        f'<text x="{pad}" y="50" font-size="20" font-weight="600" fill="{theme["ink"]}">O que mais escrevo ultimamente</text>',
+        f'<text x="{width - pad}" y="34" font-family="{mono}" font-size="11" text-anchor="end" fill="{theme["muted"]}">'
         f'ÚLTIMOS {WINDOW_DAYS // 30} MESES</text>',
-        f'<text x="{width - pad}" y="64" font-size="12" text-anchor="end" fill="{theme["muted"]}">peso maior para os repositórios mexidos há pouco</text>',
+        f'<text x="{width - pad}" y="52" font-size="12" text-anchor="end" fill="{theme["muted"]}">peso maior para os repositórios mexidos há pouco</text>',
     ]
     # Barra empilhada com a proporção de cada linguagem
-    bar_y, bar_h = 86, 14
+    bar_y, bar_h = 72, 14
     parts.append(f'<clipPath id="bar"><rect x="{pad}" y="{bar_y}" width="{span}" height="{bar_h}" rx="7"/></clipPath>')
     parts.append(f'<rect x="{pad}" y="{bar_y}" width="{span}" height="{bar_h}" rx="7" fill="{theme["track"]}"/>')
     parts.append('<g clip-path="url(#bar)">')
@@ -126,7 +125,7 @@ def svg(items, theme):
     for i, ((name, share), color) in enumerate(zip(items, colors)):
         col, row = i // rows, i % rows
         cx = pad + col * (col_w + gap)
-        cy = 140 + row * 46
+        cy = 126 + row * 46
         delay = 0.3 + i * 0.1
         parts.append(f'<g class="fade" style="animation-delay:{delay:.2f}s">')
         parts.append(f'<rect x="{cx}" y="{cy - 11}" width="10" height="10" rx="3" fill="{color}"/>')
