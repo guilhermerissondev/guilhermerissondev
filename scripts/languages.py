@@ -18,28 +18,16 @@ from html import escape
 USER = os.environ.get("GITHUB_USER", "guilhermerissondev")
 WINDOW_DAYS = 180
 HALF_LIFE_DAYS = 60
-TOP = 6
+TOP = 5
 IGNORE = {"Jupyter Notebook", "Dockerfile", "Makefile", "Mako", "Batchfile", "PowerShell"}
 
-# Cores do linguist para as linguagens que aparecem nos meus repositórios
-COLORS = {
-    "Python": "#3572A5",
-    "TypeScript": "#3178C6",
-    "JavaScript": "#F1E05A",
-    "Rust": "#DEA584",
-    "Go": "#00ADD8",
-    "PLpgSQL": "#336790",
-    "SQL": "#E38C00",
-    "HTML": "#E34C26",
-    "CSS": "#663399",
-    "Shell": "#89E051",
-    "C++": "#F34B7D",
-}
+# Cores por posição no ranking, para nunca repetir tom entre linguagens vizinhas
+PALETTE = ["#2F6FEB", "#FF6A45", "#13A89E", "#A855F7", "#F2B705", "#E5488A"]
 OTHER_COLOR = "#8B949E"
 
 THEMES = {
-    "languages.svg": {"bg": "#FFFFFF", "ink": "#1F2328", "muted": "#59636E", "rule": "#D1D9E0"},
-    "languages-dark.svg": {"bg": "#0D1117", "ink": "#F0F6FC", "muted": "#9198A1", "rule": "#3D444D"},
+    "languages.svg": {"bg": "#FFFFFF", "ink": "#1F2328", "muted": "#59636E", "rule": "#D1D9E0", "track": "#EEF1F4"},
+    "languages-dark.svg": {"bg": "#0D1117", "ink": "#F0F6FC", "muted": "#9198A1", "rule": "#3D444D", "track": "#1C222B"},
 }
 
 
@@ -93,34 +81,65 @@ def weights(token, private):
 
 
 def svg(items, theme):
-    width, bar_y, bar_h = 840, 46, 10
+    width, pad = 840, 28
+    span = width - 2 * pad
+    colors = [OTHER_COLOR if name == "Outras" else PALETTE[i % len(PALETTE)] for i, (name, _) in enumerate(items)]
+    rows = (len(items) + 1) // 2
+    height = 150 + rows * 46
+    mono = "ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace"
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="122" viewBox="0 0 {width} 122" '
-        'role="img" aria-label="Linguagens mais usadas nos últimos meses">',
-        f'<rect x="0.5" y="0.5" width="{width - 1}" height="121" rx="6" fill="{theme["bg"]}" stroke="{theme["rule"]}"/>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" '
+        'role="img" aria-label="Linguagens que mais uso nos últimos meses">',
+        "<style>",
+        ".grow{transform-box:fill-box;transform-origin:left center;animation:grow 1.1s cubic-bezier(.2,.8,.2,1) both}",
+        ".fade{animation:fade .6s ease-out both}",
+        "@keyframes grow{from{transform:scaleX(0)}}",
+        "@keyframes fade{from{opacity:0}}",
+        "@media (prefers-reduced-motion:reduce){.grow,.fade{animation:none}}",
+        "</style>",
+        f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="10" fill="{theme["bg"]}" stroke="{theme["rule"]}"/>',
         '<g font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif">',
-        f'<text x="20" y="30" font-size="14" font-weight="600" fill="{theme["ink"]}">Linguagens que mais uso ultimamente</text>',
-        f'<text x="{width - 20}" y="30" font-size="12" text-anchor="end" fill="{theme["muted"]}">'
-        f'repositórios com push nos últimos {WINDOW_DAYS // 30} meses, peso maior para os recentes</text>',
-        f'<clipPath id="bar"><rect x="20" y="{bar_y}" width="{width - 40}" height="{bar_h}" rx="5"/></clipPath>',
-        '<g clip-path="url(#bar)">',
+        f'<text x="{pad}" y="38" font-family="{mono}" font-size="11" letter-spacing="1.4" fill="{colors[0]}">LINGUAGENS</text>',
+        f'<text x="{pad}" y="64" font-size="20" font-weight="600" fill="{theme["ink"]}">O que mais escrevo ultimamente</text>',
+        f'<text x="{width - pad}" y="38" font-family="{mono}" font-size="11" text-anchor="end" fill="{theme["muted"]}">'
+        f'ÚLTIMOS {WINDOW_DAYS // 30} MESES</text>',
+        f'<text x="{width - pad}" y="64" font-size="12" text-anchor="end" fill="{theme["muted"]}">peso maior para os repositórios mexidos há pouco</text>',
     ]
-    x, span = 20.0, width - 40
-    for name, share in items:
+    # Barra empilhada com a proporção de cada linguagem
+    bar_y, bar_h = 86, 14
+    parts.append(f'<clipPath id="bar"><rect x="{pad}" y="{bar_y}" width="{span}" height="{bar_h}" rx="7"/></clipPath>')
+    parts.append(f'<rect x="{pad}" y="{bar_y}" width="{span}" height="{bar_h}" rx="7" fill="{theme["track"]}"/>')
+    parts.append('<g clip-path="url(#bar)">')
+    x = float(pad)
+    for i, ((_, share), color) in enumerate(zip(items, colors)):
         w = share * span
-        color = COLORS.get(name, OTHER_COLOR)
-        parts.append(f'<rect x="{x:.2f}" y="{bar_y}" width="{w + 0.5:.2f}" height="{bar_h}" fill="{color}"/>')
+        parts.append(
+            f'<rect class="grow" style="animation-delay:{i * 0.12:.2f}s" x="{x:.2f}" y="{bar_y}" '
+            f'width="{w + 1:.2f}" height="{bar_h}" fill="{color}"/>'
+        )
         x += w
     parts.append("</g>")
-    col_w = (width - 40) / 4
-    for i, (name, share) in enumerate(items):
-        cx = 20 + (i % 4) * col_w
-        cy = 82 + (i // 4) * 24
-        color = COLORS.get(name, OTHER_COLOR)
-        parts.append(f'<circle cx="{cx + 5}" cy="{cy - 4}" r="5" fill="{color}"/>')
+    # Duas colunas: nome, percentual e uma barra própria relativa à linguagem mais usada
+    gap = 40
+    col_w = (span - gap) / 2
+    top_share = items[0][1]
+    for i, ((name, share), color) in enumerate(zip(items, colors)):
+        col, row = i // rows, i % rows
+        cx = pad + col * (col_w + gap)
+        cy = 140 + row * 46
+        delay = 0.3 + i * 0.1
+        parts.append(f'<g class="fade" style="animation-delay:{delay:.2f}s">')
+        parts.append(f'<rect x="{cx}" y="{cy - 11}" width="10" height="10" rx="3" fill="{color}"/>')
+        parts.append(f'<text x="{cx + 18}" y="{cy - 1}" font-size="14" font-weight="500" fill="{theme["ink"]}">{escape(name)}</text>')
         parts.append(
-            f'<text x="{cx + 16}" y="{cy}" font-size="12" fill="{theme["ink"]}">{escape(name)} '
-            f'<tspan fill="{theme["muted"]}">{share * 100:.1f}%</tspan></text>'
+            f'<text x="{cx + col_w:.2f}" y="{cy - 1}" font-family="{mono}" font-size="13" font-weight="600" '
+            f'text-anchor="end" fill="{theme["ink"]}">{share * 100:.1f}%</text>'
+        )
+        parts.append("</g>")
+        parts.append(f'<rect x="{cx}" y="{cy + 9}" width="{col_w:.2f}" height="6" rx="3" fill="{theme["track"]}"/>')
+        parts.append(
+            f'<rect class="grow" style="animation-delay:{delay:.2f}s" x="{cx}" y="{cy + 9}" '
+            f'width="{max(share / top_share * col_w, 6):.2f}" height="6" rx="3" fill="{color}"/>'
         )
     parts.append("</g></svg>")
     return "\n".join(parts)

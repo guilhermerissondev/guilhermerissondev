@@ -21,15 +21,6 @@
 
 Estudo Engenharia de Software na Uninter e moro em Maringá (PR). Trabalho como Analista de Dados Pleno na Vitru Educação, onde desenvolvo em Python os sistemas do planejamento acadêmico da UniCesumar. Nos projetos pessoais, construo APIs com FastAPI e PostgreSQL.
 
-**Experiência com projetos em Python**
-
-- Otimizador de alocação docente em produção na Vitru (FastAPI, React, TypeScript, OR-Tools), que distribui cerca de 200 docentes em mais de 350 turmas por módulo em minutos, trabalho que levava semanas em planilha
-- Job Hunters no ar, com FastAPI, SQLAlchemy, Alembic, PostgreSQL/pgvector e Next.js: cerca de 98 mil vagas de 649 fontes, 380 testes, CI no GitHub Actions e 21 ADRs
-- Guia do Mercado, bot de Telegram com coletor em Python e banco PostgreSQL que estima o preço da lista de compras em 508 regiões do IBGE, a partir de cerca de 316 mil preços de 20 redes coletados toda semana
-- Agente que publica 4 vídeos curtos por dia com fonte verificável para cada fato, coberto por 691 testes automatizados
-- API em FastAPI que extrai com LLM os dados de editais do PNCP e só aceita valores que aparecem no PDF, com 61 testes offline no CI e custo de US$ 0,028 por edital
-- Pipelines de dados em produção na Vitru, sobre bases de 1 milhão a mais de 40 milhões de linhas
-
 ### Projetos end-to-end
 
 | Projeto | O que é | Stack |
