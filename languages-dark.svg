@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="274" viewBox="0 0 840 274" role="img" aria-label="Linguagens que mais uso nos últimos meses">
+<style>
+.grow{transform-box:fill-box;transform-origin:left center;animation:grow 1.1s cubic-bezier(.2,.8,.2,1) both}
+.fade{animation:fade .6s ease-out both}
+@keyframes grow{from{transform:scaleX(0)}}
+@keyframes fade{from{opacity:0}}
+@media (prefers-reduced-motion:reduce){.grow,.fade{animation:none}}
+</style>
+<rect x="0.5" y="0.5" width="839" height="273" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<text x="28" y="50" font-size="20" font-weight="600" fill="#F0F6FC">O que mais escrevo ultimamente</text>
+<text x="812" y="34" font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="11" text-anchor="end" fill="#9198A1">ÚLTIMOS 6 MESES</text>
+<text x="812" y="52" font-size="12" text-anchor="end" fill="#9198A1">peso maior para os repositórios mexidos há pouco</text>
+<clipPath id="bar"><rect x="28" y="72" width="784" height="14" rx="7"/></clipPath>
+<rect x="28" y="72" width="784" height="14" rx="7" fill="#1C222B"/>
+<g clip-path="url(#bar)">
+<rect class="grow" style="animation-delay:0.00s" x="28.00" y="72" width="562.18" height="14" fill="#2F6FEB"/>
+<rect class="grow" style="animation-delay:0.12s" x="589.18" y="72" width="103.78" height="14" fill="#FF6A45"/>
+<rect class="grow" style="animation-delay:0.24s" x="691.96" y="72" width="85.20" height="14" fill="#13A89E"/>
+<rect class="grow" style="animation-delay:0.36s" x="776.16" y="72" width="23.86" height="14" fill="#A855F7"/>
+<rect class="grow" style="animation-delay:0.48s" x="799.02" y="72" width="9.28" height="14" fill="#F2B705"/>
+<rect class="grow" style="animation-delay:0.60s" x="807.30" y="72" width="5.70" height="14" fill="#8B949E"/>
+</g>
+<g class="fade" style="animation-delay:0.30s">
+<rect x="28.0" y="115" width="10" height="10" rx="3" fill="#2F6FEB"/>
+<text x="46.0" y="125" font-size="14" font-weight="500" fill="#F0F6FC">Python</text>
+<text x="400.00" y="125" font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="13" font-weight="600" text-anchor="end" fill="#F0F6FC">71.6%</text>
+</g>
+<rect x="28.0" y="135" width="372.00" height="6" rx="3" fill="#1C222B"/>
+<rect class="grow" style="animation-delay:0.30s" x="28.0" y="135" width="372.00" height="6" rx="3" fill="#2F6FEB"/>
+<g class="fade" style="animation-delay:0.40s">
+<rect x="28.0" y="161" width="10" height="10" rx="3" fill="#FF6A45"/>
+<text x="46.0" y="171" font-size="14" font-weight="500" fill="#F0F6FC">HTML</text>
+<text x="400.00" y="171" font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="13" font-weight="600" text-anchor="end" fill="#F0F6FC">13.1%</text>
+</g>
+<rect x="28.0" y="181" width="372.00" height="6" rx="3" fill="#1C222B"/>
+<rect class="grow" style="animation-delay:0.40s" x="28.0" y="181" width="68.13" height="6" rx="3" fill="#FF6A45"/>
+<g class="fade" style="animation-delay:0.50s">
+<rect x="28.0" y="207" width="10" height="10" rx="3" fill="#13A89E"/>
+<text x="46.0" y="217" font-size="14" font-weight="500" fill="#F0F6FC">TypeScript</text>
+<text x="400.00" y="217" font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="13" font-weight="600" text-anchor="end" fill="#F0F6FC">10.7%</text>
+</g>
+<rect x="28.0" y="227" width="372.00" height="6" rx="3" fill="#1C222B"/>
+<rect class="grow" style="animation-delay:0.50s" x="28.0" y="227" width="55.82" height="6" rx="3" fill="#13A89E"/>
+<g class="fade" style="animation-delay:0.60s">
+<rect x="440.0" y="115" width="10" height="10" rx="3" fill="#A855F7"/>
+<text x="458.0" y="125" font-size="14" font-weight="500" fill="#F0F6FC">CSS</text>
+<text x="812.00" y="125" font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="13" font-weight="600" text-anchor="end" fill="#F0F6FC">2.9%</text>
+</g>
+<rect x="440.0" y="135" width="372.00" height="6" rx="3" fill="#1C222B"/>
+<rect class="grow" style="animation-delay:0.60s" x="440.0" y="135" width="15.15" height="6" rx="3" fill="#A855F7"/>
+<g class="fade" style="animation-delay:0.70s">
+<rect x="440.0" y="161" width="10" height="10" rx="3" fill="#F2B705"/>
+<text x="458.0" y="171" font-size="14" font-weight="500" fill="#F0F6FC">PLpgSQL</text>
+<text x="812.00" y="171" font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="13" font-weight="600" text-anchor="end" fill="#F0F6FC">1.1%</text>
+</g>
+<rect x="440.0" y="181" width="372.00" height="6" rx="3" fill="#1C222B"/>
+<rect class="grow" style="animation-delay:0.70s" x="440.0" y="181" width="6.00" height="6" rx="3" fill="#F2B705"/>
+<g class="fade" style="animation-delay:0.80s">
+<rect x="440.0" y="207" width="10" height="10" rx="3" fill="#8B949E"/>
+<text x="458.0" y="217" font-size="14" font-weight="500" fill="#F0F6FC">Outras</text>
+<text x="812.00" y="217" font-family="ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="13" font-weight="600" text-anchor="end" fill="#F0F6FC">0.6%</text>
+</g>
+<rect x="440.0" y="227" width="372.00" height="6" rx="3" fill="#1C222B"/>
+<rect class="grow" style="animation-delay:0.80s" x="440.0" y="227" width="6.00" height="6" rx="3" fill="#8B949E"/>
+</g></svg>
